@@ -10,14 +10,14 @@ export default function Header() {
 
     const menus = [
         { name: "Trang chủ", href: "/" },
-        { name: "Dữ liệu", href: "/data" },
-        { name: "Chuẩn đoán bệnh", href: "/picture" },
-        { name: "Tin tức", href: "/news" },
-        { name: "Hỏi AI", href: "/ai" },
+        { name: "Dữ liệu", href: "/page/data" },
+        { name: "Chuẩn đoán bệnh", href: "/page/picture" },
+        { name: "Tin tức", href: "/page/news" },
+        { name: "Hỏi AI", href: "/page/ai" },
     ];
 
     const classActive = "rounded-md bg-green-200 px-3 py-2 text-sm font-medium text-green-900";
-    const classInactive = "rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-green-200 hover:text-green-800";
+    const classInactive = "rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-green-100/50 hover:text-white";
 
     return (
         <nav className="relative bg-white-800 bg-[url('/image/bg_nav.png')] bg-cover bg-center shadow">
