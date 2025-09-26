@@ -1,7 +1,7 @@
 "use client";
 
 import { IImageDetect } from "@/interface/image_detect";
-import { createContext, useContext, useRef, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { postImageApi } from "@/service/picture";
 
 type PictureContextType = {
