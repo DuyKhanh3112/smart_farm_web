@@ -60,14 +60,10 @@ export const PictureProvider: React.FC<PictureProviderProps> = ({ children }) =>
         if (image) {
             const bytes = await imageFileToBase64(image);
             const res = await postImageApi(bytes, image!.name) as IImageDetect[];
-            // res.forEach(item => {
-            //     console.log(item.image)
-            // });
             setResult(res);
 
         }
         setLoading(false);
-        // setClickDetected(false);
     }
 
     const onchangeImage = (event: React.ChangeEvent<HTMLInputElement>) => {
